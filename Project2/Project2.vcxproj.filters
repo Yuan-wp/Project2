@@ -24,6 +24,30 @@
     <ClInclude Include="bank.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="golf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sale10.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="intake.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="move.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="plorg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sale.cpp">
@@ -42,6 +66,48 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="usebank.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="person.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="useperson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Golf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="usegolf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="intake.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="useintake.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="move.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="usemove.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="plorg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="useplorg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="uselist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="usevectorcpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
