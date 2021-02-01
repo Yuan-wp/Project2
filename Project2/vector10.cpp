@@ -1,32 +1,32 @@
 //#include<iostream>
-//#include"vector.h"
+//#include"vector10.h"
 //#include<cmath>
 //namespace VECTOR
 //{
 //	const double Rad_to_deg = 57.2957795130823;
-//	void Vector::setx()
+//	void Vector::setx(double mag,double ang)
 //	{
-//		x = mag * sin(ang);
+//		x= mag * sin(ang);
 //	}
-//	void Vector::sety()
+//	void Vector::sety(double mag,double ang)
 //	{
-//		y = mag * cos(ang);
+//		y= mag * cos(ang);
 //	}
-//	void Vector::setmag()
+//	double Vector::setmag()
 //	{
-//		mag = sqrt(x * x + y * y);
+//		return sqrt(x * x + y * y);
 //	}
-//	void Vector::setang()
+//	double Vector::setang()
 //	{
 //		if (x == 0 && y == 0)
-//			ang = 0;
+//			return  0;
 //		else
-//			ang = atan2(y , x);
+//			return atan2(y , x);
 //	}
 //	Vector::Vector()
 //	{
 //		model = RECT;
-//		x = y = ang=mag=0;
+//		x = y =0;
 //
 //	}
 //	Vector::Vector(double a, double b, Model form)
@@ -36,15 +36,12 @@
 //		{
 //			x = a;
 //			y = b;
-//			setang();
-//			setmag();
+//
 //		}
 //		else if (form == POL)
 //		{
-//			mag = a;
-//			ang = b/Rad_to_deg;
-//			setx();
-//			sety();
+//			setx(a,b);
+//			sety(a,b);
 //		}
 //		else
 //			std::cout << "warning" << std::endl;
@@ -57,22 +54,27 @@
 //		{
 //			x = a;
 //			y = b;
-//			setang();
-//			setmag();
+//
 //		}
 //		else if (form == POL)
 //		{
-//			mag = a;
-//			ang = b / Rad_to_deg;
-//			setx();
-//			sety();
+//			setx(a,b);
+//			sety(a,b);
 //		}
 //		else
 //		{
 //			std::cout << "warning" << std::endl;
 //			model = RECT;
-//			x = y = ang = mag = 0;
+//			x = y =  0;
 //		}
+//	}
+//	double Vector::magval()
+//	{
+//		return setmag();
+//	}
+//	double Vector::angval()
+//	{
+//		return setang();
 //	}
 //	Vector::~Vector()
 //	{
@@ -102,7 +104,7 @@
 //	{
 //		return b*n;
 //	}
-//	 std::ostream & operator<<(std::ostream& os, const Vector& b)
+//	 std::ostream & operator<<(std::ostream& os, Vector& b)
 //	 {
 //		 if (b.model == Vector::RECT)
 //		 {
@@ -110,7 +112,7 @@
 //		 }
 //		 else
 //		 {
-//			 os << "(m,a)" << " = " << "(" << b.mag << ", " << b.ang*Rad_to_deg << ")";
+//			 os << "(m,a)" << " = " << "(" << b.setmag() << ", " << b.setang()*Rad_to_deg << ")";
 //		 }
 //		 return os;
 //	 }

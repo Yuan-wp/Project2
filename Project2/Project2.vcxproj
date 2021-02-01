@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bank.h" />
+    <ClInclude Include="complex.h" />
     <ClInclude Include="golf.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="move.h" />
@@ -149,20 +150,26 @@
     <ClInclude Include="sale10.h" />
     <ClInclude Include="stock10.h" />
     <ClInclude Include="intake.h" />
+    <ClInclude Include="stone.h" />
+    <ClInclude Include="time.h" />
     <ClInclude Include="vector.h" />
+    <ClInclude Include="Vector10.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bank.cpp" />
+    <ClCompile Include="complex.cpp" />
     <ClCompile Include="Golf.cpp" />
     <ClCompile Include="intake.cpp" />
     <ClCompile Include="list.cpp" />
     <ClCompile Include="move.cpp" />
+    <ClCompile Include="my_time.cpp" />
     <ClCompile Include="person.cpp" />
     <ClCompile Include="plorg.cpp" />
     <ClCompile Include="sale.cpp" />
     <ClCompile Include="salemain.cpp" />
     <ClCompile Include="stock10.cpp" />
     <ClCompile Include="usebank.cpp" />
+    <ClCompile Include="usecomplex.cpp" />
     <ClCompile Include="usegolf.cpp" />
     <ClCompile Include="useintake.cpp" />
     <ClCompile Include="uselist.cpp" />
@@ -170,8 +177,10 @@
     <ClCompile Include="useperson.cpp" />
     <ClCompile Include="useplorg.cpp" />
     <ClCompile Include="usestock2.cpp" />
+    <ClCompile Include="usetime.cpp" />
     <ClCompile Include="usevectorcpp.cpp" />
     <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="vector10.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
